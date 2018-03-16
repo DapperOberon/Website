@@ -55,6 +55,11 @@
     grid-area: content;
     padding: 4em 0;
   }
+  select {
+    border-radius: 100px;
+    border: none;
+    padding: 0.5em;
+  }
   .btn {
     background: #d2232a;
     border-radius: 100px;
