@@ -1,0 +1,7 @@
+# Generated files
+*.map
+
+BingSiteAuth.xml
+google*.html
+
+database/
