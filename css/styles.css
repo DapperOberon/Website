@@ -85,8 +85,28 @@
   .btn-group .btn:last-of-type {
     border-radius: 0 100px 100px 0;
   }
+  .select-styled {
+    position: relative;
+  }
+  .select-styled:before {
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    color: #000;
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 0.5em;
+    pointer-events: none;
+  }
   footer select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
     width: 100%;
+  }
+  option {
+    text-align: center;
   }
   .center {
     display: flex;

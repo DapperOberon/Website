@@ -10,10 +10,12 @@
       </address>
       <div class='locale'>
         <h4><i class="fas fa-language fa-lg"></i> Sprache</h4>
-        <select id='locale' onchange="changeLocale()">
-          <option id="deutsch" value="de">Deutsch</option>
-          <option id="english" value="en">English</option>
-        </select>
+        <div class="select-styled">
+          <select id='locale' onchange="changeLocale()">
+            <option id="deutsch" value="de">Deutsch</option>
+            <option id="english" value="en">English</option>
+          </select>
+        </div>
       </div>
     </div>
     <p class="copyright">Copyright &copy;

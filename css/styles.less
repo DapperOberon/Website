@@ -122,10 +122,32 @@
     border-radius: 0 @btn-radius @btn-radius 0;
   }
 
+  .select-styled {
+    position: relative;
+  }
+
+  .select-styled:before {
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    color: #000;
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 0.5em; // Half of 1.2 global line height
+    pointer-events: none;
+  }
+
   footer select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     appearance: none;
+    text-align: center;
     width: 100%;
   }
 
+  option {
+    text-align: center;
+  }
 
   .center {
     display: flex;
