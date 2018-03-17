@@ -1,10 +1,12 @@
 // out: styles.css, sourcemap: true, compress: false
 
 @red: #d2232a;
-@darkred: #7f1519;
+@dark-red: #7f1519;
+@blue: #36848f;
+@dark-blue: #0c2d3d;
 @white: #fff;
 @black: #000;
-@fontcolor: #333;
+@font-color: #333;
 
 @btn-radius: 100px;
 
@@ -13,6 +15,14 @@
 
 // Global styles
 @media screen {
+  a {
+    color: @blue;
+  }
+
+  a:visited {
+    color: @dark-blue;
+  }
+
   h1 {
     color: @red;
     font-size: 2em;
@@ -83,13 +93,7 @@
     padding: 4em 0;
   }
 
-  select {
-    border-radius: @btn-radius;
-    border: none;
-    padding: 0.5em;
-  }
-
-  .btn {
+  a.btn {
     background: @red;
     border-radius: @btn-radius;
     color: @white;
@@ -99,7 +103,7 @@
   }
 
   .btn:hover {
-    background: @darkred;
+    background: @dark-red;
   }
 
   .btn.btn-light {
@@ -129,7 +133,7 @@
   .select-styled:before {
     content: '\f107';
     font-family: "Font Awesome 5 Free";
-    color: #000;
+    color: @font-color;
     display: inline-block;
     position: absolute;
     right: 10%;
@@ -138,15 +142,15 @@
   }
 
   footer select {
+    border-radius: @btn-radius;
+    border: none;
+    padding: 0.5em;
     -webkit-appearance: none;
     -moz-appearance: none;
      appearance: none;
     text-align: center;
     width: 100%;
-  }
-
-  option {
-    text-align: center;
+    cursor: pointer;
   }
 
   .center {
@@ -383,7 +387,7 @@
 }
 
 a { color: @red; }
-a:visited { color: @darkred; }
+a:visited { color: @dark-red; }
 
 .page p {
   margin-bottom: 1em;

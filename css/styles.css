@@ -1,4 +1,10 @@
 @media screen {
+  a {
+    color: #36848f;
+  }
+  a:visited {
+    color: #0c2d3d;
+  }
   h1 {
     color: #d2232a;
     font-size: 2em;
@@ -55,12 +61,7 @@
     grid-area: content;
     padding: 4em 0;
   }
-  select {
-    border-radius: 100px;
-    border: none;
-    padding: 0.5em;
-  }
-  .btn {
+  a.btn {
     background: #d2232a;
     border-radius: 100px;
     color: #fff;
@@ -91,7 +92,7 @@
   .select-styled:before {
     content: '\f107';
     font-family: "Font Awesome 5 Free";
-    color: #000;
+    color: #333;
     display: inline-block;
     position: absolute;
     right: 10%;
@@ -99,14 +100,15 @@
     pointer-events: none;
   }
   footer select {
+    border-radius: 100px;
+    border: none;
+    padding: 0.5em;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     text-align: center;
     width: 100%;
-  }
-  option {
-    text-align: center;
+    cursor: pointer;
   }
   .center {
     display: flex;
@@ -292,7 +294,7 @@
 }
 
 a { color: @red; }
-a:visited { color: @darkred; }
+a:visited { color: @dark-red; }
 
 .page p {
   margin-bottom: 1em;
