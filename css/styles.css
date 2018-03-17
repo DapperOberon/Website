@@ -60,6 +60,13 @@
   .page {
     grid-area: content;
     padding: 4em 0;
+    text-align: center;
+  }
+  .fa-cog {
+    color: #36848f;
+  }
+  .construction {
+    font-size: 2em;
   }
   a.btn {
     background: #d2232a;

@@ -28,7 +28,7 @@
       <?php include 'http://localhost/camerontsmith.tk/de/includes/header.inc.php'; ?>
 
       <main class="page">
-        <p>Im Aufbau</p>
+        <p class="construction"><i class="fas fa-cog"></i> Im Aufbau</p>
       </main>
 
       <?php include 'http://localhost/camerontsmith.tk/de/includes/footer.inc.php'; ?>
