@@ -44,11 +44,15 @@
     font-weight: bold;
   }
 
+  html, body {
+    min-height: 100vh;
+  }
+
   body {
     font-family: sans-serif;
     line-height: 1.2em;
     display: grid;
-    grid-template-rows: 5em auto auto;
+    grid-template-rows: 5em 1fr auto;
     grid-template-areas:
     "header"
     "content"
