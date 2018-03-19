@@ -5,9 +5,9 @@
     </a>
     <nav>
       <a class="btn btn-light" href="http://localhost/camerontsmith.tk/de/about/">Über</a>
-      <a class="btn btn-light" href="#">Portfolio</a>
+      <a class="btn btn-light" href="http://localhost/camerontsmith.tk/de/portfolio/">Portfolio</a>
       <a class="btn btn-light" href="http://localhost/camerontsmith.tk/de/astro-gallery/">Galerie</a>
-      <a class="btn btn-light" href="#">Kontakt</a>
+      <a class="btn btn-light" href="http://localhost/camerontsmith.tk/de/contact/">Kontakt</a>
     </nav>
   </header>
 </div>
