@@ -1,7 +1,12 @@
 // out: styles.css, sourcemap: true, compress: false
 
 @red: #d2232a;
-@dark-red: #7f1519;
+@dark-red: #b71f24;
+@light-grey: #eee9e9;
+@green: #a8d800;
+@dark-green: #93bc00;
+@light-green: #c0d8a8;
+
 @blue: #36848f;
 @dark-blue: #0c2d3d;
 @white: #fff;
@@ -16,7 +21,9 @@
 // Global styles
 @media screen {
   a {
-    color: @blue;
+    color: @green;
+    font-weight: bold;
+
   }
 
   a:visited {
@@ -128,6 +135,14 @@
   .btn.btn-light:hover {
     background: @red;
     color: @white;
+  }
+
+  .btn.btn-important {
+    background-color: @green;
+  }
+
+  .btn.btn-important:hover {
+    background-color: @dark-green;
   }
 
   .btn-group .btn:first-of-type {

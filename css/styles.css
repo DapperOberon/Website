@@ -1,6 +1,7 @@
 @media screen {
   a {
-    color: #36848f;
+    color: #a8d800;
+    font-weight: bold;
   }
   a:visited {
     color: #0c2d3d;
@@ -81,7 +82,7 @@
     text-decoration: none;
   }
   .btn:hover {
-    background: #7f1519;
+    background: #b71f24;
   }
   .btn.btn-light {
     background: none;
@@ -90,6 +91,12 @@
   .btn.btn-light:hover {
     background: #d2232a;
     color: #fff;
+  }
+  .btn.btn-important {
+    background-color: #a8d800;
+  }
+  .btn.btn-important:hover {
+    background-color: #93bc00;
   }
   .btn-group .btn:first-of-type {
     border-radius: 100px 0 0 100px;
