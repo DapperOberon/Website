@@ -15,7 +15,7 @@
         </select>
       </div>
     </div>
-    <p class="copyright">Copyright &copy;
+    <p class="copyright">Copyright <i class="fas fa-copyright"></i>
       <?php
         $year = date("Y");
         if($year > 2018){
