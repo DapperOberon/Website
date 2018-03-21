@@ -1,10 +1,10 @@
 @media screen {
   a {
-    color: #a8d800;
+    color: #A8C437;
     font-weight: bold;
   }
   a:visited {
-    color: #0c2d3d;
+    color: #124259;
   }
   h1 {
     color: #d2232a;
@@ -68,7 +68,7 @@
     text-align: center;
   }
   .fa-cog {
-    color: #36848f;
+    color: #43B0E6;
   }
   .construction {
     font-size: 2em;
@@ -93,13 +93,34 @@
     color: #fff;
   }
   .btn.btn-important {
-    background-color: #a8d800;
+    background-color: #A8C437;
   }
   .btn.btn-important:hover {
-    background-color: #93bc00;
+    background-color: #92AB30;
+  }
+  .btn.btn-neutral {
+    background-color: #888;
+  }
+  .btn.btn-neutral:hover {
+    background-color: #6d6d6d;
+  }
+  .btn.btn-extra {
+    background-color: #43B0E6;
+  }
+  .btn.btn-extra:hover {
+    background-color: #3A99C9;
+  }
+  .btn.btn-dark {
+    background-color: #124259;
+  }
+  .btn.btn-dark:hover {
+    background-color: #175573;
   }
   .btn-group .btn:first-of-type {
     border-radius: 100px 0 0 100px;
+  }
+  .btn-group .btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
   }
   .btn-group .btn:last-of-type {
     border-radius: 0 100px 100px 0;
@@ -312,7 +333,7 @@
 }
 
 a { color: @red; }
-a:visited { color: @dark-red; }
+a:visited { color: @red-accent; }
 
 .page p {
   margin-bottom: 1em;
