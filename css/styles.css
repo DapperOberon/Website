@@ -122,7 +122,6 @@
   .page {
     grid-area: content;
     padding: 4em 0.75em;
-    text-align: center;
   }
   .header-container {
     grid-area: header;
@@ -157,7 +156,7 @@
     text-align: center;
     text-decoration: none;
     padding: 1em 0;
-    margin: 0.75em 0;
+    margin: 0.5em 0;
   }
   nav a:hover {
     background: #b71f24;
