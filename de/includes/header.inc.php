@@ -4,10 +4,10 @@
       <img src="http://localhost/camerontsmith.tk/images/icons/logo.png" alt="Cameron Smith Logo"/>
     </a>
     <nav>
-      <a href="http://localhost/camerontsmith.tk/de/about/">Über</a>
-      <a href="http://localhost/camerontsmith.tk/de/portfolio/">Portfolio</a>
+      <a href="http://localhost/camerontsmith.tk/de/about.php">Über</a>
+      <a href="http://localhost/camerontsmith.tk/de/portfolio.php">Portfolio</a>
       <a href="http://localhost/camerontsmith.tk/de/astro-gallery/">Galerie</a>
-      <a href="http://localhost/camerontsmith.tk/de/contact/">Kontakt</a>
+      <a href="http://localhost/camerontsmith.tk/de/contact.php">Kontakt</a>
     </nav>
   </header>
 </div>

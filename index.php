@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <title>Cameron Smith</title>
-    
-    <?php include 'http://localhost/camerontsmith.tk/includes/head.inc.php'; ?>
+
+    <?php include './includes/head.inc.php'; ?>
   </head>
   <body class="landing-page">
     <!-- Content goes here -->
