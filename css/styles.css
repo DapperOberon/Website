@@ -91,6 +91,17 @@
   .copyright {
     font-size: 0.75em;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .btn,
+  nav a {
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    font-variant-caps: small-caps;
+  }
   h1 {
     color: #d2232a;
     font-size: 2em;
@@ -113,10 +124,10 @@
     min-height: 100vh;
   }
   body {
-    font-family: sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.2em;
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: "header" "content" "footer";
   }
   .page {
@@ -125,6 +136,7 @@
   }
   .header-container {
     grid-area: header;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   }
   header {
     display: flex;
@@ -156,7 +168,13 @@
     text-align: center;
     text-decoration: none;
     padding: 1em 0;
-    margin: 0.5em 0;
+    margin: 0.4em 0;
+  }
+  nav a:first-of-type {
+    margin-top: 0;
+  }
+  nav a:last-of-type {
+    margin-bottom: 0.8em;
   }
   nav a:hover {
     background: #b71f24;
@@ -245,5 +263,48 @@
   }
   .construction {
     font-size: 2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    grid-template-rows: 5em 1fr auto;
+  }
+  .header-container {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  .logo {
+    margin: 0;
+  }
+  nav {
+    flex-direction: row;
+  }
+  nav,
+  nav a {
+    width: auto;
+  }
+  nav a,
+  nav a:first-of-type {
+    margin: 1em;
+    padding: 1em;
+  }
+  nav a:last-of-type {
+    margin-bottom: 1em;
+    margin-right: 0;
+  }
+  .footer-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  address {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header,
+  .page,
+  footer {
+    margin: auto;
+    width: 960px;
   }
 }
