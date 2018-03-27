@@ -115,6 +115,11 @@
     border-radius: 0 @default-radius @default-radius 0;
   }
 
+  .page-figure-left {
+    float: left;
+    margin: 0 2em 2em 0;
+  }
+
   .select-styled {
     position: relative;
   }
@@ -180,8 +185,12 @@
     margin: 0.5em 0;
   }
 
-  .paragraph {
+  .page p, .paragraph {
     margin-bottom: 1em;
+  }
+
+  .page p:last-of-type {
+    margin-bottom: 0;
   }
 
   .fa-cog {
