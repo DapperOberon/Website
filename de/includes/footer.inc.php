@@ -5,8 +5,10 @@
       <address>
         <h4><i class="fas fa-info-circle"></i> Kontaktinformation</h4>
         <p>email: <a href="mailto:cameron@camerontsmith.tk">cameron@camerontsmith.tk</a></p>
-        <p>instagram: <a href="https://instagram.com/camerosmit">instagram.com/camerosmit</a></p>
-        <p>astrobin: <a href="http://astrobin.com/users/ShadowCamero">astrobin.com/users/ShadowCamero</a></p>
+        <p>soundcloud: <a href="https://www.soundcloud.com/camerontsmithmusic">camerontsmithmusic</a></p>
+        <p>facebook: <a href="https://www.facebook.com/smith.cameront">smith.cameront</a></p>
+        <p>instagram: <a href="https://instagram.com/camerosmit">camerosmit</a></p>
+        <p>youtube: <a href="https://www.youtube.com/channel/UC0H335SBkA3sCf9vduHhrbg">UC0H335SBkA3sCf9vduHhrbg</a></p>
       </address>
       <div class='locale'>
         <h4><i class="fas fa-language fa-lg"></i> Sprache</h4>
