@@ -6,7 +6,7 @@
     <nav>
       <a href="http://localhost/camerontsmith.tk/de/about.php">Über</a>
       <a href="http://localhost/camerontsmith.tk/de/portfolio.php">Portfolio</a>
-      <a href="http://localhost/camerontsmith.tk/de/astro-gallery/">Galerie</a>
+      <a href="http://localhost/camerontsmith.tk/de/gallery/">Galerie</a>
       <a href="http://localhost/camerontsmith.tk/de/contact.php">Kontakt</a>
     </nav>
   </header>

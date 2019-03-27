@@ -11,7 +11,7 @@
       $id = $_GET['id'];
       // Ensure ID is safe
 
-      $sql = "SELECT * FROM astro_gallery_en WHERE id = $id";
+      $sql = "SELECT * FROM gallery_en WHERE id = $id";
       $result = $db->query($sql);
 
       if (!$result) {
@@ -20,20 +20,10 @@
 
       if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()){
-            $imageURL = 'http://localhost/camerontsmith.tk/images/astro-gallery/'. $row['imageURL'];
+            $imageURL = 'http://localhost/camerontsmith.tk/images/gallery/'. $row['imageURL'];
             $title = $row['title'];
             $description = $row['description'];
-            $telescope_lens = $row['telescope-lens'];
-            $camera = $row['camera'];
-            $mount = $row['mount'];
-            $software = $row['software'];
-            $accessory = $row['accessory'];
-            $resolution = $row['resolution'];
             $date = $row['date'];
-            $lights = $row['lights'];
-            $darks = $row['darks'];
-            $flats = $row['flats'];
-            $bias = $row['bias'];
         }
       } else {
           echo "0 results";
@@ -59,17 +49,7 @@
           <div class="gallery-file-details-holder">
             <h3>Details</h3>
             <ul>
-              <li><span class="bold">Imaging telescope or lens:</span> <?php echo $telescope_lens; ?></li>
-              <li><span class="bold">Imaging camera:</span> <?php echo $camera; ?></li>
-              <li><span class="bold">Mount:</span> <?php echo $mount; ?></li>
-              <li><span class="bold">Software:</span> <?php echo $software; ?></li>
-              <li><span class="bold">Accessory:</span> <?php echo $accessory; ?></li>
-              <li><span class="bold">Resolution:</span> <?php echo $resolution; ?></li>
               <li><span class="bold">Date:</span> <?php echo $date; ?></li>
-              <li><span class="bold">Lights:</span> <?php echo $lights; ?></li>
-              <li><span class="bold">Darks:</span> <?php echo $darks; ?></li>
-              <li><span class="bold">Flats:</span> <?php echo $flats; ?></li>
-              <li><span class="bold">Bias:</span> <?php echo $bias; ?></li>
             </ul>
           </div>
 

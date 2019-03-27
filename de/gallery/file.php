@@ -10,7 +10,7 @@
       $id = $_GET['id'];
       // Ensure ID is safe
 
-      $sql = "SELECT * FROM astro_gallery_de WHERE id = $id";
+      $sql = "SELECT * FROM gallery_de WHERE id = $id";
       $result = $db->query($sql);
 
       if (!$result) {
@@ -19,20 +19,10 @@
 
       if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()){
-            $imageURL = 'http://localhost/camerontsmith.tk/images/astro-gallery/'. $row['imageURL'];
+            $imageURL = 'http://localhost/camerontsmith.tk/images/gallery/'. $row['imageURL'];
             $title = $row['title'];
             $description = $row['description'];
-            $telescope_lens = $row['telescope-lens'];
-            $camera = $row['camera'];
-            $mount = $row['mount'];
-            $software = $row['software'];
-            $accessory = $row['accessory'];
-            $resolution = $row['resolution'];
             $date = $row['date'];
-            $lights = $row['lights'];
-            $darks = $row['darks'];
-            $flats = $row['flats'];
-            $bias = $row['bias'];
         }
       } else {
           echo "0 results";
@@ -58,17 +48,7 @@
           <div class="gallery-file-details-holder">
             <h3>Einzelheiten</h3>
             <ul>
-              <li><span class="bold">Abbildungsfernrohr oder Objektiv:</span> <?php echo $telescope_lens; ?></li>
-              <li><span class="bold">Bildgebende Kamera:</span> <?php echo $camera; ?></li>
-              <li><span class="bold">Montieren:</span> <?php echo $mount; ?></li>
-              <li><span class="bold">Software:</span> <?php echo $software; ?></li>
-              <li><span class="bold">Zubehörteil:</span> <?php echo $accessory; ?></li>
-              <li><span class="bold">Auflösung:</span> <?php echo $resolution; ?></li>
               <li><span class="bold">Datum:</span> <?php echo $date; ?></li>
-              <li><span class="bold">Beleuchtung:</span> <?php echo $lights; ?></li>
-              <li><span class="bold">Dunkelheit:</span> <?php echo $darks; ?></li>
-              <li><span class="bold">Wohnungen:</span> <?php echo $flats; ?></li>
-              <li><span class="bold">Vorspannen:</span> <?php echo $bias; ?></li>
             </ul>
           </div>
 

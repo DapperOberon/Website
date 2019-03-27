@@ -14,7 +14,7 @@
 
           include ('../../database/db-config.php');
 
-          $sql = "SELECT id, imageThumbURL, title FROM astro_gallery_en";
+          $sql = "SELECT id, imageThumbURL, title FROM gallery_en";
           $result = $db->query($sql);
 
           if (!$result) {
@@ -24,10 +24,10 @@
           if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()){
                 $id = $row['id'];
-                $imageThumbURL = 'http://localhost/camerontsmith.tk/images/astro-gallery/thumbs/' . $row['imageThumbURL'];
+                $imageThumbURL = 'http://localhost/camerontsmith.tk/images/gallery/thumbs/' . $row['imageThumbURL'];
                 $title = $row['title'];
           ?>
-        <a href="http://localhost/camerontsmith.tk/en/astro-gallery/file.php?<?php echo 'id=' . $id; ?>">
+        <a href="http://localhost/camerontsmith.tk/en/gallery/file.php?<?php echo 'id=' . $id; ?>">
           <figure>
             <img src="<?php echo $imageThumbURL; ?>" />
             <figcaption class="image-overlay">

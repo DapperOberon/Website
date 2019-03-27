@@ -9,8 +9,8 @@
       <?php include 'http://localhost/camerontsmith.tk/en/includes/header.inc.php'; ?>
 
       <main class="page">
-
         <p class="construction"><i class="fas fa-cog"></i> Under construction.</p>
+        
       </main>
 
       <?php include 'http://localhost/camerontsmith.tk/en/includes/footer.inc.php'; ?>
